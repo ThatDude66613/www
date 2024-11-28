@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банковский счет</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+<div class="header">
+    <button class="profile-button">
+        <span class="profile-icon">👤</span>
+    </button>
+
+     <button class="settings-button">
+            <span class="settings-icon">⚙️</span>
+        </button>
+ 
+</div>
+        <p>АО Банк "Национальный стандарт"</p>
+       <button id="logoutButton" class="logout-button">Выйти</button>
+    </div>
+
+
+
+    <div class="account-info">
+        <div class="card-info">
+            <p>Тестовый счет карты</p>
+            <p>407 02 810 9 000 0000000</p>
+        </div>
+        <div class="balance">
+            <h2>94 037,48 ₽</h2>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="card-flip-container">
+    <div class="card-flip" onclick="flipCard()">
+        <div class="card-front">
+            <img src="front-card.png" alt="Front Side" class="card-image">
+        </div>
+        <div class="card-back">
+            <img src="back-card.png" alt="Back Side" class="card-image">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- Новый блок с предупреждением -->
+<div class="warning-block">
+    <span class="lock-icon">🔒</span>
+    <div class="warning-text">
+        <p class="warning-title">Операции по данной карте временно ограничены</p>
+        <p class="warning-details">Пожалуйста, ожидайте пока сотрудники банка свяжутся с вами для уточнения</p>
+    </div>
+</div>
+
+
+
+    <div class="tabs">
+        <button class="tab active" onclick="showTransactions('all')">Все операции</button>
+        <button class="tab" onclick="showTransactions('income')">Поступления</button>
+        <button class="tab" onclick="showTransactions('expense')">Списания</button>
+    </div>
+    <div id="transactions" class="transactions">
+        <!-- Список транзакций по умолчанию -->
+        <div class="transaction">
+            <p>28.06.2021</p>
+            <p>-59,00 ₽</p>
+        </div>
+        <div class="transaction">
+            <p>№62686535</p>
+            <p>-59,00 ₽</p>
+        </div>
+        <div class="transaction">
+            <p>07.05.2021</p>
+            <p>-4 800,00 ₽</p>
+        </div>
+        <div class="transaction">
+            <p>№54221990</p>
+            <p>-2 400,00 ₽</p>
+        </div>
+        <div class="transaction">
+            <p>11.05.2021</p>
+            <p>-955,84 ₽</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
