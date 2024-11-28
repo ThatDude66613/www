@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банковский счет</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>ООО "Тестовый клиент"</h1>
+        <p>АО Банк "Национальный стандарт"</p>
+       <button id="logoutButton" class="logout-button">Выйти</button>
+    </div>
+    <div class="account-info">
+        <div class="card-info">
+            <p>Тестовый счет карты</p>
+            <p>407 02 810 9 000 0000000</p>
+        </div>
+        <div class="balance">
+            <h2>94 037,48 ₽</h2>
+        </div>
+    </div>
+    <div class="tabs">
+        <button class="tab active" onclick="showTransactions('all')">Все операции</button>
+        <button class="tab" onclick="showTransactions('income')">Поступления</button>
+        <button class="tab" onclick="showTransactions('expense')">Списания</button>
+    </div>
+    <div id="transactions" class="transactions">
+        <!-- Список транзакций по умолчанию -->
+        <div class="transaction">
+            <p>28.06.2021</p>
+            <p>-59,00 ₽</p>
+        </div>
+        <div class="transaction">
+            <p>№62686535</p>
+            <p>-59,00 ₽</p>
+        </div>
+        <div class="transaction">
+            <p>07.05.2021</p>
+            <p>-4 800,00 ₽</p>
+        </div>
+        <div class="transaction">
+            <p>№54221990</p>
+            <p>-2 400,00 ₽</p>
+        </div>
+        <div class="transaction">
+            <p>11.05.2021</p>
+            <p>-955,84 ₽</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
